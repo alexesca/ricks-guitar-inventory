@@ -7,7 +7,7 @@ public class FindGuitarTester {
 		Inventory inventory = new Inventory();
 		initializeInventory(inventory);
 
-		GuitarSpec whatErinLikes = new GuitarSpec(Builder.PRS, "stratocastor", Type.ELECTRIC, Wood.MAHOGANY, Wood.MAPLE);
+		GuitarSpec whatErinLikes = new GuitarSpec(Builder.PRS, "stratocastor", Type.ELECTRIC, Wood.MAHOGANY, Wood.MAPLE, 12);
 
 		List matchingGuitars = inventory.search(whatErinLikes);
 		if(!matchingGuitars.isEmpty()) {
@@ -29,8 +29,10 @@ public class FindGuitarTester {
 						"stratocastor",
 						Type.ELECTRIC,
 						Wood.MAHOGANY,
-						Wood.MAPLE)
-				);
+						Wood.MAPLE,
+						12
+				)
+		);
 		
 		
 		inventory.addGuitar(
@@ -40,8 +42,10 @@ public class FindGuitarTester {
 						"AR2323-X",
 						Type.ACOUSTIC,
 						Wood.BRAZILIAN,
-						Wood.BRAZILIAN)
-				);
+						Wood.BRAZILIAN,
+						12
+				)
+		);
 		inventory.addGuitar(
 				"000004",
 				250.0,
@@ -49,7 +53,9 @@ public class FindGuitarTester {
 						"stratocastor",
 						Type.ELECTRIC,
 						Wood.MAHOGANY,
-						Wood.MAPLE)
+						Wood.MAPLE,
+						10
+						)
 				);
 		
 		
