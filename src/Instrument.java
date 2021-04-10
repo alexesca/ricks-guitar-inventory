@@ -9,6 +9,13 @@ public abstract class Instrument {
         this.spec = spec;
     }
 
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 
     public InstrumentSpec getSpec() {
     return spec;

@@ -22,7 +22,7 @@ public class FindGuitarTester {
 	}
 	
 	private static void initializeInventory(Inventory inventory) {
-		inventory.addGuitar(
+		inventory.addInstrument(
 				"000001",
 				200.0,
 				new GuitarSpec(Builder.PRS,
@@ -35,7 +35,7 @@ public class FindGuitarTester {
 		);
 		
 		
-		inventory.addGuitar(
+		inventory.addInstrument(
 				"000002",
 				250.0,
 				new GuitarSpec(Builder.GIBSON,
@@ -46,7 +46,7 @@ public class FindGuitarTester {
 						12
 				)
 		);
-		inventory.addGuitar(
+		inventory.addInstrument(
 				"000004",
 				250.0,
 				new GuitarSpec(Builder.PRS,
