@@ -32,29 +32,17 @@ public class Inventory
         return null;
     }
 
-    public List search(GuitarSpec searchGuitar)
+    public List search(InstrumentSpec searchSpec)
     {
-    	List matchingGuitars = new LinkedList();
+    	List matchingInstruments = new LinkedList();
         for (Iterator i = inventory.iterator(); i.hasNext();)
         {
-        	Guitar guitar = (Guitar)i.next();
-            if(guitar.getSpec().matches(searchGuitar)) {
-                matchingGuitars.add(guitar);
+        	Instrument instrument = (Instrument) i.next();
+            if(instrument.getSpec().matches(searchSpec)) {
+                matchingInstruments.add(instrument);
             }
         }
-        return matchingGuitars;
+        return matchingInstruments;
     }
 
-    public List search(MandolinSpec searchGuitar)
-    {
-        List matchingMandolins = new LinkedList();
-        for (Iterator i = inventory.iterator(); i.hasNext();)
-        {
-            Mandolin mandolin = (Mandolin) i.next();
-            if(mandolin.getSpec().matches(searchGuitar)) {
-                matchingMandolins.add(mandolin);
-            }
-        }
-        return matchingMandolins;
-    }
 }
